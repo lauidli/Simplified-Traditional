@@ -16,9 +16,7 @@
 // @description    汉 -> 漢
 // @description:en Convert Simplified Chinese characters to Traditional Chinese characters
 // @author         lilauid
-// @match          *://*.google.com/search*
-// @match          *://*.bbc.com/*
-// @match          *://*.wiktionary.org/*
+// @match          *://*.example.org/*
 // @grant          none
 // @license        GNU 3.0
 // ==/UserScript==
