@@ -24,8 +24,8 @@
 (function() {
     'use strict';
 
-    let SChineseCharactersN = 2879; // 可轉換的字
-    let SChineseWordsN = 470; // 可轉換的詞
+    let SChineseCharactersN = 2878; // 可轉換的字
+    let SChineseWordsN = 478; // 可轉換的詞
     let StVersion = 0.30; // 版本
 
     let isInputFocused = false; // 用來標記是否在輸入狀態
