@@ -12,11 +12,11 @@
 // @name:tibt      རྒྱ་ཡིག་གི་ཡི་གེ་བསྒྱུར།
 // @icon           https://lh3.googleusercontent.com/fife/ALs6j_EdYy6J-9PySp5oODgrGoJIntC9RD9whzX6OdB7Si7VAxpn8uOhSmSv8J9T6nVZj__hdlxRO--SVxdhPDUdlnAT7wWf3-XGbBvjy2ikqG6jCQ-2913KYl9FMHm4cR9TeD0OvDe-1Wd1xBfKu14xLqGflsAGMmBlJG3Pq579t4msCGPTvQDvQsPF-q_3bmQ581lpvdv-EA0f_xFMl12HeCPxDxyXUrkqwWcavaHbMvlGOB-JQxD5YwQ-D0Ib0kKjN1PlAKUjVO5I71A-hyrPWnSAmiNDd2Ta4YJL-TFY7Wy6Cqv-XmTEys_9xHMY04YcL60mJBhd7sqCLb3D2hD1maZgAk5em1HdjJwEC2CziExPEWMlmoGosoeu6eWi91a0mXr65k3gH7Hv9lQ0OYurZ_vjk4be_n1RlTgZQ_Kdrzozute6czHeT_XvnfUmR2W6mG8zOuAnT_4K4cYXgn0MpxvY6W7mpygXboZV3KvFUza36cuELJxLVOo_o8oVC63SQQchvnS0o1bpwY6SdwE7B1eVdi64-CQyCnZCri3s67i-zKXlt5V3_r81eYvNdCfPaMeFH4lXQzhDrqTKRrCbI79kWDg5EfxFA0d4PVdUmXp3JWgTQ3ZiqPdUKLfP4zk7RrDJUUdrzUbprF3AHKSpr1MaAiipYWZAe-slqv6tHwVwams-rL4tkcFaruetYhI987kdnfCe-f9xeHYd8mZZEOs6KFcoenNlReU_1BpEwsqbvbPWIYXDzc6eePwalLzkIGPfEnrz1zhfSmADxKrizdCz9qR0ZFupVrp9RljoJ6OHUG-ff2PqPYK111-pQf5ty4vol_CfBm3L4gaaSwJS9fE5NZm6yIishDJo66FSq5OQbxlNAcDOLYv6t6LWbx7cP2EXPk2NtOgC6W1gQRF3IOK9y1iDhTFjfFJ0GGuOGSBOOmxflrX2M756OTNrTGOHxB-yiSMZ54IkmjOIJtbT7syNAbcBUn9YrlPmqkPkxT0wB41RrgBxwnxOMGxPt4inz_0w6ihTzEbjkSTLjLAQTNByj63NZNiUhbgi3rcg4lGIRqPiTwXy9T-TphFzT-nbJ2xHwmIr2ceewsjzKws8I6_AoqAMFac7z2YZs1TrA2kE_6wz9ei8p7vuLVD-MzGgZSf57nMVkjRNs7tW3VAF8ucOO7028mQMYSlRigM2leH69xmHesVeoeQnQJnj-9qH4vTxonOfJq6PpDSXH13CbO7QeHeBksJbIsAxPpYh3_Fg8LF-vqhzdorccUEzeXQRt-IAnyaNWX10TK20aT6qyrZasn0JOqskDn0vqB5NWPMjkDTd-FUB4sOIViJ2jmMhXQtUisdfivh9JSKfYv64R-eSHQz0ZqIciOD0rZlU-8E4SeRVrrBW3JZCyr-kGk1cN73kG6JMiuDAiTpgLE_7vPn07UALSzIcaWm6g8ss-sD9Wd4ru8AqQnyOtgCAKIHAXYnuTbsk1R2sESSGnl-hOol2wgmINBEOxF_FaBPvwYlJi78Zbu9U3-4vCVDTw44fY5jo4ZkdvjQfiSlwBcW-v-t9ajq2KazwLjw3batnIqDeA_niRDdTLXeuSX9rgM8xAJsMhdyfMW0GvycZG32pJA=w2186-h1445
 // @namespace      https://tampermonkey.net/
-// @version        0.30
+// @version        0.31
 // @description    汉 -> 漢
 // @description:en Convert Simplified Chinese characters to Traditional Chinese characters
 // @author         lilauid
-// @match          *://*.example.org/*
+// @match          *://*.google.com/*
 // @grant          none
 // @license        GNU 3.0
 // ==/UserScript==
@@ -25,8 +25,8 @@
     'use strict';
 
     let SChineseCharactersN = 2878; // 可轉換的字
-    let SChineseWordsN = 478; // 可轉換的詞
-    let StVersion = 0.30; // 版本
+    let SChineseWordsN = 479; // 可轉換的詞
+    let StVersion = 0.31; // 版本
 
     let isInputFocused = false; // 用來標記是否在輸入狀態
     let replaceRules = { titleRules: {}, textRules: {} }; // 預設空白規則
